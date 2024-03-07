@@ -1,0 +1,101 @@
+<!doctype html>
+<html language="en">
+<link rel="stylesheet" href="style.css">
+<!-- top title -->
+<div class="top-container">
+    <h1>Something here</h1>
+    <p>@@@@@@@@@@@</p>
+</div>
+<!-- header (make sticky with javascript in assessment 2) -->
+<div class="header" id="myHeader">
+    <h2>My Header</h2>
+    <!-- Navigation buttons -->
+    <div id="parentDiv">
+        <button id="myBtn" class="myclass">ADD ME</button>
+
+    </div>
+</div>
+
+<body>
+    <h1>
+        Apply
+    </h1>
+    <h3>
+        Enter in your personal details for your selected role.<br><br>
+    </h3>
+    <form>
+
+        <!-- Job Ref -->
+        <label for="ref">Job Reference:</label><br>
+        <input type="text" id="ref" name="ref" placeholder="example" maxlength="5" minlength="5" required="true">
+        <br><br><br><br><br>
+
+        <!-- Personal Info -->
+        <label for="first">First name:</label><br>
+        <input type="text" id="first" name="first" placeholder="John" required="true" maxlength="20"><br>
+
+        <label for="last">Last name:</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Doe" required="true" maxlength="20"><br>
+
+        <label for="postcode">Post Code:</label><br>
+        <input type="text" id="postcode" name="pcode" placeholder="3000" required="true" maxlength="4" minlength="4"><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Johndoe@example.com" required="true"><br>
+
+        <label for="address">Address:</label><br>
+        <input type="text" id="address" name="address" placeholder="69 Swinburne road" required="true" maxlength="40"><br>
+
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="0434123456" pattern="[0-9]" minlength="8" maxlength="12" required="true"><br>
+        <br>
+
+        <input type="radio" id="gender" name="gender" value="Male" required="true">
+        <label for="Male">Male</label><br>
+
+        <input type="radio" id="gender" name="gender" value="Female" required="true">
+        <label for="Female">Female</label><br>
+
+        <label for="Other">Other</label><br>
+        <input type="text" id="other" name="other" placeholder="Other"><br><br><br>
+
+
+        <br>
+        <!--State-->
+        <label for="state">Select your state:</label>
+        <select id="state " name="state " required="true">
+            <option value="vic ">Victoria</option>
+            <option value="sa">South Australia</option>
+            <option value="nt ">Northern territory</option>
+            <option value="qld ">Queensland</option>
+            <option value="nsw ">New South Wales</option>
+            <option value="perth ">Perth</option>
+        </select>
+
+        <br> <br><br>
+        <!--Skills-->
+        <input type="checkbox" id="skill" name="skill" value="skill">
+        <label for="skill">skill</label><br>
+
+        <input type="checkbox" id="skill" name="skill" value="skill">
+        <label for="skill">skill</label><br>
+
+        <input type="checkbox" id="skill" name="skill" value="skill">
+        <label for="skill">skill</label><br>
+
+        <input type="checkbox" id="skill" name="skill" value="skill">
+        <label for="skill">skill</label><br>
+
+        <input type="checkbox" id="skill" name="skill" value="skill">
+        <label for="skill">skill</label><br>
+
+        <br>
+        <!-- Date -->
+        <label for="datesub">Date:</label>
+        <input type="date" id="date" name="date" value="2003-03-24" min="1900-01-01" required="true" />
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
