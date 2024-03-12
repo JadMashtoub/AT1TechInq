@@ -1,3 +1,4 @@
+/* Jad Mashtoub 103596586 */
 input[type=text],
 input[type=tel],
 input[type=email] {
@@ -9,10 +10,12 @@ input[type=email] {
     -webkit-transition: 0.5s;
     transition: 0.5s;
     outline: none;
+    
 }
 
 input[type=text]:focus {
     border: 3px solid #555;
+
 }
 
 input[type=tel]:focus {
@@ -38,12 +41,51 @@ input:invalid {
     background: #4c5bb3;
     color: #f1f1f1;
 }
-
+/* Doesnt display a textbox by default */
 #otherText {
     display: none;
   }
 
-  /* Show the input field when the "Other" radio button is checked */
-  #other:checked + #otherText {
+/* Show the input field when the "Other" radio button is checked */
+#other:checked + #otherText {
     display: block;
   }
+  footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #4c5bb3;
+    color: white;
+  }
+
+
+
+  /* Text field formatting */
+  .name-container {
+    display: flex;
+    justify-content: space-between; /* Space out the children */
+    margin-bottom: 20px; /* Add margin between name container and centered container */
+  }
+  
+  .input-group {
+    flex: 0 0 48%; /* Adjust width as needed */
+  }
+  
+  .input-group label {
+    display: block; /* Ensure label is on top of input */
+    margin-bottom: 5px; /* Add space between label and input */
+  }
+  
+  .input-group input {
+    width: 100%; /* Take up full width of container */
+  }
+  
+  .centered-container {
+    text-align: center; /* Center-align the content */
+  }
+  
+  .centered-container .input-group {
+    display: inline-block; /* Display inputs inline */
+    text-align: left; /* Reset text alignment */
+  }
+  
+  /* ============================================================= */
