@@ -39,6 +39,11 @@ input:invalid {
     color: #f1f1f1;
 }
 
-.parentDiv button {
-    color: red
-}
+#otherText {
+    display: none;
+  }
+
+  /* Show the input field when the "Other" radio button is checked */
+  #other:checked + #otherText {
+    display: block;
+  }
