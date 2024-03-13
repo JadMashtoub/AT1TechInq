@@ -1,115 +1,116 @@
-<!doctype html>
-<html language="en">
-<link rel="stylesheet" href="style.css">
-<!-- top title -->
-<div class="top-container">
-    <h1>Apply</h1>
-    <p>@@@@@@@@@@@</p>
-</div>
-<!-- header (make sticky with javascript in assessment 2) -->
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="header" id="myHeader">
-    <h2>My Header</h2>
-    
-    <!-- Navigation buttons -->
-    <a href="index.html">
-    <div id="parentDiv">
-        <button id="myBtn" class="myclass">Home</button>
-</a>
-    </div>
-</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
 <body>
-    <h1>
-        Apply
-    </h1>
-    <h3>
-        Enter in your personal details for your selected role.<br><br>
-    </h3>
-    <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+    <!-- Top title -->
+    <div class="top-container">
+        <h1>Apply</h1>
+        <p>@@@@@@@@@@@</p>
+    </div>
 
+    <!-- Header (make sticky with JavaScript in assessment 2) -->
+    <div class="header" id="myHeader">
+        <h2>My Header</h2>
+        <!-- Navigation buttons -->
+        <a href="index.html">
+            <div id="parentDiv">
+                <button id="myBtn" class="myclass">Home</button>
+            </div>
+        </a>
+    </div>
+
+    <h3>
+        Enter your personal details for your selected role.<br><br>
+    </h3>
+
+    <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
         <!-- Job Ref -->
         <label for="ref">Job Reference:</label><br>
-        <input type="text" id="ref" name="ref" placeholder="example" maxlength="5" minlength="5" required="true">
-        <br><br>
-<hr>
+        <input type="text" id="ref" name="ref" placeholder="example" maxlength="5" minlength="5" required><br><br>
+        <hr>
         <!-- Personal Info text fields with validation -->
-        <br>
         <div class="name-container">
             <div class="input-group">
-              <label for="first">First name:</label>
-              <input type="text" id="first" name="first" placeholder="John" required maxlength="20">
+                <label for="first">First name:</label>
+                <input type="text" id="first" name="first" placeholder="John" required pattern ="[A-Za-z]+" maxlength="20">
             </div>
-            
+
             <div class="input-group">
-              <label for="last">Last name:</label>
-              <input type="text" id="last" name="last" placeholder="Doe" required maxlength="20">
+                <label for="last">Last name:</label>
+                <input type="text" id="last" name="last" placeholder="Doe" required pattern ="[A-Za-z]+" maxlength="20">
             </div>
-          </div>
-        
+        </div>
+
         <label for="postcode">Post Code:</label><br>
-        <input type="text" id="postcode" name="pcode" placeholder="3000" required="true" maxlength="4" minlength="4"><br>
+        <input type="text" id="postcode" name="pcode" placeholder="3000" required maxlength="4" minlength="4"><br>
 
         <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" placeholder="Johndoe@example.com" required="true"><br>
+        <input type="email" id="email" name="email" placeholder="Johndoe@example.com" required><br>
 
         <label for="address">Address:</label><br>
-        <input type="text" id="address" name="address" placeholder="69 Swinburne road" required="true" maxlength="40"><br>
+        <input type="text" id="address" name="address" placeholder="69 Swinburne road" required maxlength="40"><br>
 
         <label for="phone">Phone:</label><br>
-        <input type="tel" id="phone" name="phone" placeholder="0434123456" minlength="8" maxlength="12" required="true"><br>
-        <br>
-        <!-- Radio buttons -->
-        <input type="radio" id="gender" name="gender" value="Male" required="true">
-        <label for="Male">Male</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="0434123456" minlength="8" maxlength="12" required><br><br>
 
-        <input type="radio" id="gender" name="gender" value="Female" required="true">
-        <label for="Female">Female</label><br>
+        <!-- Radio buttons -->
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label><br>
+
+        <input type="radio" id="female" name="gender" value="Female" required>
+        <label for="female">Female</label><br>
 
         <label for="other">Other</label>
         <input type="radio" id="other" name="gender" value="other">
         <!-- "Other" textbox only appears when "other" radio button is clicked -->
-        <input type="text" id="otherText" name="otherText" placeholder="Other">
+        <input type="text" id="otherText" name="otherText" placeholder="Other"><br><br>
 
-        <br>
-        <!--State dropdown box-->
+        <!-- State dropdown box -->
         <label for="state">Select your state:</label>
-        <select id="state " name="state " required="true">
-            <option value="vic ">Victoria</option>
+        <select id="state" name="state" required>
+            <option value="vic">Victoria</option>
             <option value="sa">South Australia</option>
-            <option value="nt ">Northern territory</option>
-            <option value="qld ">Queensland</option>
-            <option value="nsw ">New South Wales</option>
-            <option value="perth ">Perth</option>
-        </select>
+            <option value="nt">Northern territory</option>
+            <option value="qld">Queensland</option>
+            <option value="nsw">New South Wales</option>
+            <option value="perth">Perth</option>
+        </select><br><br>
 
-        <br> <br><br>
-        <!--Skills checkbox-->
+        <!-- Skills checkboxes -->
         <input type="checkbox" id="skill1" name="skill1" value="skill1">
-        <label for="skill1">skill1</label><br>
+        <label for="skill1">Skill 1</label><br>
 
         <input type="checkbox" id="skill2" name="skill2" value="skill2">
-        <label for="skill2">skill2</label><br>
+        <label for="skill2">Skill 2</label><br>
 
         <input type="checkbox" id="skill3" name="skill3" value="skill3">
-        <label for="skill3">skill3</label><br>
+        <label for="skill3">Skill 3</label><br>
 
         <input type="checkbox" id="skill4" name="skill4" value="skill4">
-        <label for="skill4">skill4</label><br>
+        <label for="skill4">Skill 4</label><br>
 
-        <input type="checkbox" id="skill"5 name="skill5" value="skill5">
-        <label for="skill5">skill5</label><br>
+        <input type="checkbox" id="skill5" name="skill5" value="skill5">
+        <label for="skill5">Skill 5</label><br><br>
 
-        <br>
         <!-- Date -->
         <label for="datesub">Date:</label>
-        <input type="date" id="date" name="date" value="2003-03-24" min="1900-01-01" required="true" />
-        <br><br>
+        <input type="date" id="date" name="date" value="2003-03-24" min="1900-01-01" required><br><br>
+
         <button type="submit">Apply</button>
     </form>
+
+    <!-- Footer -->
+    <footer>
+        <p>Text here<br>
+            <a href="mailto:test@gmail.com">hege@example.com</a></p>
+    </footer>
 </body>
-<footer>
-  <p>text here<br>
-  <a href="mailto:test@gmail.com">hege@example.com</a></p>
-</footer>
+
 </html>

@@ -1,21 +1,22 @@
 /* Jad Mashtoub 103596586 */
-input[type=text],
-input[type=tel],
-input[type=email] {
-    width: 50%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 3px solid #ccc;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    outline: none;
-    
-}
 
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+
+textarea {
+  width: calc(100% - 24px); /* Set the width to match the first name and last name inputs */
+  padding: 12px; /* Adjust padding as needed */
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
 input[type=text]:focus {
     border: 3px solid #555;
-
 }
 
 input[type=tel]:focus {
@@ -41,32 +42,38 @@ input:invalid {
     background: #4c5bb3;
     color: #f1f1f1;
 }
+
+
 /* Doesnt display a textbox by default */
+
 #otherText {
     display: none;
-  }
+}
+
 
 /* Show the input field when the "Other" radio button is checked */
-#other:checked + #otherText {
+
+#other:checked+#otherText {
     display: block;
-  }
-  footer {
+}
+
+footer {
     text-align: center;
     padding: 3px;
     background-color: #4c5bb3;
     color: white;
-  }
+}
 
 
+/* Text field formatting */
 
-  /* Text field formatting */
-  .name-container {
+.name-container {
     display: flex;
-    justify-content: space-between; /* Space out the children */
-    margin-bottom: 20px; /* Add margin between name container and centered container */
-  }
-  
-  .input-group {
+    justify-content: space-between;
+    /* Space out the children */
+}
+
+.input-group {
     flex: 0 0 48%; /* Adjust width as needed */
   }
   
@@ -88,4 +95,16 @@ input:invalid {
     text-align: left; /* Reset text alignment */
   }
   
-  /* ============================================================= */
+  .centered-input {
+    margin: 0 auto; /* Center-align the input fields */
+  }
+/* Hide the default radio button */
+.radio-container input[type="radio"] {
+    display: none;
+  }
+  
+
+  
+  
+
+/* ============================================================= */
